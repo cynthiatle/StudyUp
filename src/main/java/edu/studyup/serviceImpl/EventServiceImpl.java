@@ -73,7 +73,7 @@ public class EventServiceImpl implements EventService {
 		if(presentStudents.size() >= 2) {
 			throw new StudyUpException("Too many students. Maximum is 2.");
 		}
-			
+
 		presentStudents.add(student);
 		event.setStudents(presentStudents);		
 		return DataStorage.eventData.put(eventID, event);
